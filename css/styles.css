@@ -238,12 +238,14 @@ address {
 
 .navigation {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .logo-link {
   display: block;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-list {
@@ -265,6 +267,7 @@ address {
 
 .header-line {
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav-link-line::after {
@@ -324,6 +327,10 @@ address {
   display: flex;
   align-items: center;
   border: none;
+  padding: 32px 0;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .icon-link:hover,
@@ -347,11 +354,6 @@ address {
 
 .contact-item:not(:last-child) {
   margin-right: 50px;
-}
-
-header {
-  position: relative;
-  border-bottom: 1px solid #ececec;
 }
 
 .order-button {
@@ -384,6 +386,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
 }
 
 .hero-section {
@@ -458,7 +461,7 @@ header {
 }
 
 .team-section .team-icon-link {
-  fill: var(--main-text-color);
+  fill: var(--clients-border-color);
 }
 
 .team-icon {
@@ -497,11 +500,13 @@ header {
 
 .item-block {
   padding: 30px 32px;
+  background-color: var(--white-color);
 }
 
 .clients-icon-link {
   display: flex;
   border: 1px solid var(--clients-border-color);
+  color: var(--clients-border-color);
   border-radius: 4px;
   width: 170px;
   height: 90px;
@@ -771,29 +776,34 @@ footer .button {
   padding: 40px 40px;
 }
 
-.form-field {
+.form-label:not(:last-child) {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.form-field:not(:last-child) {
+.form-label:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.form-label:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.form-field:last-child {
+.form-label:last-child {
   margin-bottom: 20px;
-}
-
-.form-field span {
-  display: inline-block;
-  margin-bottom: 4px;
 }
 
 .form-label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+}
+
+.label-text {
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
 .form-input:hover,
@@ -836,16 +846,18 @@ footer .button {
 .form-area {
   width: 100%;
   resize: none;
-  padding-top: 12px;
-  padding-left: 16px;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  margin-bottom: 20px;
 }
 
-.terms-block {
-  display: inline-block;
+.form-label-terms {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .terms-link {
@@ -858,17 +870,13 @@ footer .button {
   appearance: none;
 }
 
-.form-label-terms {
-  padding-left: 5px;
-}
-
-.checkbox-decor {
-  display: inline-block;
+.terms-span {
   margin-left: 5px;
 }
 
 .custom-icon {
   display: inline-block;
+  cursor: pointer;
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-color);
@@ -890,11 +898,6 @@ footer .button {
   width: 18px;
   height: 18px;
   transform: translateY(-72%);
-}
-
-.submit-button {
-  display: flex;
-  justify-content: center;
 }
 
 .examples-overlay {
