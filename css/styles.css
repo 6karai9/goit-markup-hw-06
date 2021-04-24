@@ -658,8 +658,8 @@ footer .button {
   width: 24px;
   height: 24px;
   top: 50%;
-  right: 8%;
-  transform: translate(-50%, -50%);
+  right: 28px;
+  transform: translateY(-50%);
   fill: var(--white-color);
   background-image: url(../images/svg/send.svg);
 }
