@@ -233,7 +233,8 @@ address {
   font-family: inherit;
   cursor: pointer;
   border: none;
-  transition: box-shadow var(--transition-whole), background-color var(--transition-whole);
+  transition: box-shadow var(--transition-whole), color var(--transition-whole),
+    background-color var(--transition-whole);
 }
 
 .navigation {
@@ -724,6 +725,7 @@ footer .button {
   transform: translate(-50%, -50%);
   min-height: 581px;
   max-width: 528px;
+  padding: 40px 40px;
   border-radius: 4px;
   background-color: #ffffff;
 }
@@ -741,10 +743,6 @@ footer .button {
 
   transform: scale(1);
   transition: var(--transition-transform);
-}
-
-.modal-button {
-  position: relative;
 }
 
 .btn-icon-close {
@@ -769,11 +767,6 @@ footer .button {
 .btn-modal:hover .icon,
 .btn-modal-close:focus .icon {
   fill: var(--link-color);
-}
-
-.modal .form {
-  width: 528px;
-  padding: 40px 40px;
 }
 
 .form-label:not(:last-child) {
@@ -862,6 +855,7 @@ footer .button {
 
 .terms-link {
   color: var(--link-color);
+  margin-left: 5px;
 }
 
 .checkbox {
@@ -891,13 +885,21 @@ footer .button {
   background-origin: border-box;
 }
 
+.checkbox:focus + .custom-icon {
+  border-color: var(--link-color);
+}
+
+.input-icon-position {
+  position: relative;
+}
+
 .form-input + .icon {
   position: absolute;
-  top: 72%;
+  top: 50%;
   left: 14px;
   width: 18px;
   height: 18px;
-  transform: translateY(-72%);
+  transform: translateY(-50%);
 }
 
 .examples-overlay {
