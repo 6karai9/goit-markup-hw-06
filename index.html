@@ -413,43 +413,49 @@
           </svg>
         </button>
 
-        <form class="form" autocomplete="off">
+        <form class="form-request" autocomplete="off">
           <b class="request-action">Оставьте свои данные, мы вам перезвоним</b>
 
-          <label class="form-label">
-            <span class="label-text">Имя</span>
-            <div class="input-icon-position">
-              <input type="text" class="form-input" />
-              <svg class="icon">
-                <use href="./css/symbol-defs.svg#icon-person"></use>
-              </svg>
-            </div>
-          </label>
+          <div class="request-input-block">
+            <label class="form-label">
+              <span class="label-text">Имя</span>
 
-          <label class="form-label">
-            <span class="label-text">Телефон</span>
-            <div class="input-icon-position">
-              <input type="tel" class="form-input" />
-              <svg class="icon">
-                <use href="./css/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </label>
+              <span class="request-icon-position">
+                <input type="text" class="form-input" />
+                <svg class="icon">
+                  <use href="./css/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </span>
+            </label>
 
-          <label class="form-label">
-            <span class="label-text">Почта</span>
-            <div class="input-icon-position">
-              <input type="email" class="form-input" />
-              <svg class="icon">
-                <use href="./css/symbol-defs.svg#icon-email"></use>
-              </svg>
-            </div>
-          </label>
+            <label class="form-label">
+              <span class="label-text">Телефон</span>
 
-          <label class="form-label">
-            <span class="label-text">Комментарий</span>
-            <textarea name="comment" class="form-area" rows="8" placeholder="Введите текст"></textarea>
-          </label>
+              <span class="request-icon-position">
+                <input type="tel" class="form-input" />
+                <svg class="icon">
+                  <use href="./css/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="label-text">Почта</span>
+
+              <span class="request-icon-position">
+                <input type="email" class="form-input" />
+                <svg class="icon">
+                  <use href="./css/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="label-text">Комментарий</span>
+
+              <textarea name="comment" class="form-area" rows="8" placeholder="Введите текст"></textarea>
+            </label>
+          </div>
 
           <label class="form-label-terms">
             <input class="checkbox" type="checkbox" name="terms" />
@@ -458,7 +464,7 @@
             <a class="terms-link" href="">Условия договора</a>
           </label>
 
-          <label class="form-label">
+          <label class="form-label-button">
             <button type="submit" class="order-button button">Отправить</button>
           </label>
         </form>
